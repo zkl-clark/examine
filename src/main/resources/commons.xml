@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<root>
+	<!-- kafka -->
+	<kafka>
+		<ip>master</ip>
+		<port>9092</port>
+		<zookeeper>master:2181</zookeeper>
+	</kafka>
+	<!-- mysql -->
+	<mysql>
+		<url>jdbc:mysql://localhost:3306/examine?characterEncoding=UTF-8</url>
+		<username>root</username>
+		<passwd>741852</passwd>
+	</mysql>
+	<!-- spark -->
+	<spark>
+		<StreamMaster>local[2]</StreamMaster>
+		<streamname>examinestream</streamname>
+		<seconds>10</seconds>
+        <sqlmaster>local</sqlmaster>
+        <sqlname>examinesql</sqlname>
+	</spark>
+
+	<!-- filepath -->
+	<path>
+		<localpath>D:\logs\result</localpath>
+		<hdfspath>/examine/result</hdfspath>
+	</path>
+
+</root>
